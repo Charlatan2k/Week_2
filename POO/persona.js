@@ -1,12 +1,12 @@
 class Person{
 
-  constructor(nombre, edad){
+  constructor(nombre, edad, altura, peso, yearOfBirth, nacionalidad){
     this.nombre = nombre;
-    this.altura;
+    this.altura = altura
     this.edad = edad;
-    this.peso;
-    this.yearOfBirth;
-    this.nacionalidad;
+    this.peso = peso;
+    this.yearOfBirth = yearOfBirth;
+    this.nacionalidad = nacionalidad;
     
   }
 
@@ -25,8 +25,14 @@ class Person{
     return resultado;
   }
 
+  printAll(){
+    for (let atr in this){
+        console.log(`La propiedad ${atr} - ${this[atr]}`);
+    }
+  }
+
 }
 
-let persona1 = new Person("David", 18);
 
-console.log(`Tienes ${persona1.calcEdad(2004)} años`);
+
+module.exports = {Person};
