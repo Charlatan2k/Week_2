@@ -1,13 +1,13 @@
 class Person{
 
-  constructor(nombre, edad, altura, peso, yearOfBirth, nacionalidad){
+  constructor(nombre, edad, altura, peso, yearOfBirth, nacionalidad, hobbies){
     this.nombre = nombre;
     this.altura = altura
     this.edad = edad;
     this.peso = peso;
     this.yearOfBirth = yearOfBirth;
     this.nacionalidad = nacionalidad;
-    
+    this.hobbies = hobbies;
   }
 
 
@@ -29,6 +29,15 @@ class Person{
     for (let atr in this){
         console.log(`La propiedad ${atr} - ${this[atr]}`);
     }
+  }
+
+  printHobbies(){
+    let resultado = ""; 
+    for (let h of this.hobbies){
+      resultado += " " + h;
+      
+    }
+    return resultado;
   }
 
 }
