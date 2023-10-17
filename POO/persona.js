@@ -5,7 +5,7 @@ class Person{
     this.altura;
     this.edad = edad;
     this.peso;
-    this.anyo;
+    this.yearOfBirth;
     this.nacionalidad;
     
   }
@@ -18,8 +18,15 @@ class Person{
     return resultado;
   }
 
+  calcEdad(año){
+    let resultado;
+    this.yearOfBirth = año;
+    resultado = 2023 - año;
+    return resultado;
+  }
+
 }
 
 let persona1 = new Person("David", 18);
 
-console.log(persona1);
+console.log(`Tienes ${persona1.calcEdad(2004)} años`);
