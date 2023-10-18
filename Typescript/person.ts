@@ -6,21 +6,21 @@ export class Person{
     this.address = address;
   }
 
-  printName(){
+  public printName(){
     console.log(this.name);
     
   }
 
-  yearOfBirth(currentYear: number):number{
+   public yearOfBirth(currentYear: number):number{
     let resultado = currentYear - this.age;
     return resultado;
   }
 
-  setAddress(address:string):void{
+  public setAddress(address:string):void{
     this.address = address;
   }
 
-  getAddress():string{
+   public getAddress():string{
     return this.address;
   }
 }
