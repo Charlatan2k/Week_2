@@ -1,4 +1,4 @@
-class Book{
+export class Book{
 
   constructor(private title: string, private nPages: number, private isbn: string, private author: string, private editorial: string){
     this.title = title;
@@ -68,6 +68,4 @@ class Book{
   
 }
 
-let book1 = new Book("Intro a js", 220, "233444-BC2444", "Pepe", "Edicion especial");
 
-console.log(book1.toString());
