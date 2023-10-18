@@ -55,14 +55,15 @@ export class Book{
   }
 
 
-  public toString():string{
-    return `
+  public toString():void{
+    console.log(
+     `
       Title: ${this.getTitle()}
       Number of Pages: ${this.getNpages()}
       ISBN: ${this.getIsbn()}
       Author: ${this.getAuthor()}
       Editorial: ${this.getEditorial()}
-    `;
+    `);
 
   }
   
