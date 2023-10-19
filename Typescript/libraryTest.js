@@ -1,0 +1,11 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var book_1 = require("./book");
+var library_1 = require("./library");
+var book1 = new book_1.Book("Intro a js", 220, "233444-BC2444", "Pepe", "Edicion especial");
+var book2 = new book_1.Book("Intro a C", 1600, "532444-BC2444", "Luis", "Edicion primera");
+var book3 = new book_1.Book("Intro a python", 180, "621444-BC2444", "Carlos", "Edicion navidad");
+var bookArray = [];
+bookArray.push(book1, book2, book3);
+var library1 = new library_1.Library(bookArray, "Calle 2", "Luis");
+console.log(library1.findByAuthor("Carlos"));
