@@ -4,3 +4,4 @@ let persona1 = new myLib.Person("David", 18, 180, 70, 2004, "España", ["correr"
 
 console.log(persona1.printHobbies());
 
+
