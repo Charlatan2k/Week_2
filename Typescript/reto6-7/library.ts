@@ -1,4 +1,4 @@
-import { Book } from "./book"
+import { Book } from "../reto4-5/book"
 
 
 export class Library{
@@ -41,11 +41,15 @@ export class Library{
     this.manager = manager;
   }
 
-  public toString():void{
-    for (let i = 0; i < this.books.length; i++){
-      this.books[i].toString();
+  public toString(): void {
+    for (let i = 0; i < this.books.length; i++) {
+      if (i + 1 <= this.books.length) {
+        console.log(`Book ${i + 1}`);
+        this.books[i].toString();
+      }
     }
   }
+  
 
   public getNumberOfBooks():number{
     return this.books.length;
