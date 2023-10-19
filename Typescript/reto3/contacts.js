@@ -1,17 +1,14 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Contacts = void 0;
-var person_1 = require("./person");
 var Contacts = /** @class */ (function () {
     function Contacts() {
-        this.lista = [];
+        this.people = [];
     }
     Contacts.prototype.printCalendar = function () {
-        var resultado;
-        for (var i = 0; i < person_1.Person.length; i++) {
-            resultado[i] = this.lista[i];
+        for (var i = 0; i < this.people.length; i++) {
+            console.log(this.people);
         }
-        return resultado;
     };
     return Contacts;
 }());

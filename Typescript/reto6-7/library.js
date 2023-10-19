@@ -29,14 +29,16 @@ var Library = /** @class */ (function () {
     };
     Library.prototype.toString = function () {
         for (var i = 0; i < this.books.length; i++) {
-            this.books[i].toString();
+            if (i + 1 <= this.books.length) {
+                console.log("Book ".concat(i + 1));
+                this.books[i].toString();
+            }
         }
     };
     Library.prototype.getNumberOfBooks = function () {
         return this.books.length;
     };
     Library.prototype.findByAuthor = function (author) {
-        // Create an array to store the matching books
         var matchingBooks = [];
         for (var i = 0; i < this.books.length; i++) {
             if (this.books[i].getAuthor() === author) {
