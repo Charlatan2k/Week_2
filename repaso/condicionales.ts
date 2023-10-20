@@ -46,7 +46,7 @@ console.log(zodiac(24, 2));
 
 
 // Función de continente
-function continent(country){
+function continent(country:string):string{
   let continente;
   if (country == "España" || country == "Francia" || country == "Noruega"){
     continente = "Europa";
@@ -76,8 +76,11 @@ function continent(country){
 
 console.log(continent("España"));
 
-function isEven(n){
-  n % 2 == 0 ? console.log("El numero es par") : "No es par";
+function isEven(n:number):void{
+  if (n % 2 === 0){
+    console.log(n);
+    
+  }
   
 }
 
