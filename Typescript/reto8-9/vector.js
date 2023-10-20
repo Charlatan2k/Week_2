@@ -9,7 +9,7 @@ var Vector = /** @class */ (function () {
         }
     }
     Vector.prototype.print = function () {
-        return this.elements;
+        console.log(Vector);
     };
     Vector.prototype.add = function (v1) {
         var resultado = new Vector(0, 0);

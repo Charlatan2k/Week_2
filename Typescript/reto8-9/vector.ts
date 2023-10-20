@@ -15,9 +15,11 @@ export class Vector{
 
   public add(v1:Vector):Vector {
     let resultado:Vector = new Vector(0, 0)
+    if(v1.elements.length == this.elements.length){
     for (let i = 0; i < this.elements.length; i++){
       resultado.elements.push(v1.elements[i] + this.elements[i]);
       }
+    }
 
       return resultado;
 
@@ -32,10 +34,11 @@ export class Vector{
 
     public subs(v1:Vector):Vector {
       let resultado:Vector = new Vector(0, 0)
+      if(v1.elements.length == this.elements.length){
       for (let i = 0; i < this.elements.length; i++){
         resultado.elements.push(v1.elements[i] - this.elements[i]);
         }
-  
+      }
         return resultado;
   
       }
