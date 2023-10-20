@@ -1,69 +1,73 @@
 // Función zodiacal
 function zodiac(dia, mes) {
+    var zodiacal;
     if (dia >= 21 && mes == 3 || dia <= 19 && mes == 4) {
-        console.log("Tu signo zodiacal es Aries");
+        zodiacal = "Aries";
     }
     else if (dia >= 20 && mes == 4 || dia <= 20 && mes == 5) {
-        console.log("Tu signo zodiacal es Tauro");
+        zodiacal = "Tauro";
     }
     else if (dia >= 21 && mes == 5 || dia <= 20 && mes == 6) {
-        console.log("Tu signo zodiacal es Géminis");
+        zodiacal = "Géminis";
     }
     else if (dia >= 21 && mes == 6 || dia <= 22 && mes == 7) {
-        console.log("Tu signo zodiacal es Cáncer");
+        zodiacal = "Cáncer";
     }
     else if (dia >= 23 && mes == 7 || dia <= 22 && mes == 8) {
-        console.log("Tu signo zodiacal es Leo");
+        zodiacal = "Leo";
     }
     else if (dia >= 23 && mes == 8 || dia <= 22 && mes == 9) {
-        console.log("Tu signo zodiacal es Virgo");
+        zodiacal = "Virgo";
     }
     else if (dia >= 23 && mes == 9 || dia <= 22 && mes == 10) {
-        console.log("Tu signo zodiacal es Libra");
+        zodiacal = "Libra";
     }
     else if (dia >= 23 && mes == 10 || dia <= 22 && mes == 11) {
-        console.log("Tu signo zodiacal es Escorpio");
+        zodiacal = "Escorpio";
     }
     else if (dia >= 22 && mes == 11 || dia <= 19 && mes == 12) {
-        console.log("Tu signo zodiacal es Sagitario");
+        zodiacal = "Sagitario";
     }
     else if (dia >= 22 && mes == 12 || dia <= 19 && mes == 1) {
-        console.log("Tu signo zodiacal es Capricornio");
+        zodiacal = "Capricornio";
     }
     else if (dia >= 20 && mes == 1 || dia <= 18 && mes == 2) {
-        console.log("Tu signo zodiacal es Acuario");
+        zodiacal = "Acuario";
     }
     else if (dia >= 19 && mes == 2 || dia <= 20 && mes == 3) {
-        console.log("Tu signo zodiacal es Pisces");
+        zodiacal = "Pisces";
     }
+    return "Tu signo zodiacal es ".concat(zodiacal);
 }
 // Llamando a la función con sus parametros
-zodiac(24, 2);
+console.log(zodiac(24, 2));
 // Función de continente
 function continent(country) {
+    var continente;
     if (country == "España" || country == "Francia" || country == "Noruega") {
-        console.log("Estás en Europa");
+        continente = "Europa";
     }
     else if (country == "Argentina" || country == "EU" || country == "Chile") {
-        console.log("Estás en Sud America");
+        continente = "Sud America";
     }
     else if (country == "EU" || country == "Canada") {
-        console.log("Estás en Norte America");
+        continente = "Norte America";
     }
     else if (country == "China" || country == "Tailandia" || country == "Japon") {
-        console.log("Estás en Asia");
+        continente = "Asia";
     }
     else if (country == "Australia" || country == "Fiji" || country == "Nueva Zelanda") {
-        console.log("Estás en Australia");
+        continente = "Australia";
     }
     else if (country == "Kenya" || country == "Uganda" || country == "Egipto") {
-        console.log("Estás en Africa");
+        continente = "Africa";
     }
     else {
         console.log("No reconozco este país");
     }
+    return "Est\u00E1s en ".concat(continente);
 }
-continent("España");
+console.log(continent("España"));
 function isEven(n) {
     n % 2 == 0 ? console.log("El numero es par") : "No es par";
 }
