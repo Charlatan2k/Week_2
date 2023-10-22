@@ -12,7 +12,7 @@ function evenNumbers(n:number):number[]{
   return resultado;
 }
 
-console.log(evenNumbers(10));
+// console.log(evenNumbers(10));
 
 
 // Función de array al revés
@@ -29,7 +29,7 @@ function myRevert(myarr:string[]):string[]{
 
 let arr1 = ["hola", "que", "tal", "estás"] 
 
-console.log(myRevert(arr1));
+// console.log(myRevert(arr1));
 
 // Función de imprimir el color que si está en el arcoiris
 function isRainbow(colors:string[]):string[]{
@@ -49,11 +49,11 @@ return colorEs;
 
 let colores = ["verde", "gris", "negro"];
 
-console.log(isRainbow(colores));
+// console.log(isRainbow(colores));
 
 
 // Función de dar la suma de todos los caracteres de todas las palabras en un array
-function add(myWords:string[]):number{
+export function add(myWords:string[]):number{
   let result: number = 0;
   for(let palabras of myWords){
     
@@ -66,4 +66,4 @@ function add(myWords:string[]):number{
 
 let pal = ["Rodrigo", "cocina"]
 
-console.log(add(pal));
+// console.log(add(pal));

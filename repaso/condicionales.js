@@ -1,4 +1,7 @@
+"use strict";
 // Función zodiacal
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.isEven = void 0;
 function zodiac(dia, mes) {
     var zodiacal;
     if (dia >= 21 && mes == 3 || dia <= 19 && mes == 4) {
@@ -40,7 +43,7 @@ function zodiac(dia, mes) {
     return "Tu signo zodiacal es ".concat(zodiacal);
 }
 // Llamando a la función con sus parametros
-console.log(zodiac(24, 2));
+// console.log(zodiac(24, 2));
 // Función de continente
 function continent(country) {
     var continente;
@@ -67,8 +70,15 @@ function continent(country) {
     }
     return "Est\u00E1s en ".concat(continente);
 }
-console.log(continent("España"));
+// console.log(continent("España"));
+//Función de numeros pares
 function isEven(n) {
-    n % 2 == 0 ? console.log("El numero es par") : "No es par";
+    if (n % 2 === 0) {
+        console.log("El numero ".concat(n, " es par"));
+    }
+    else {
+        console.log("El n\u00FAmero ".concat(n, " es impar"));
+    }
 }
-isEven(2);
+exports.isEven = isEven;
+// isEven(2);

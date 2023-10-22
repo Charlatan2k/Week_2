@@ -1,4 +1,7 @@
+"use strict";
 // Función todos los numeros impares hasta el parametro introducido
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.add = void 0;
 function evenNumbers(n) {
     var resultado = [];
     for (var i = 1; i < n; i++) {
@@ -8,7 +11,7 @@ function evenNumbers(n) {
     }
     return resultado;
 }
-console.log(evenNumbers(10));
+// console.log(evenNumbers(10));
 // Función de array al revés
 function myRevert(myarr) {
     var result = [];
@@ -18,7 +21,8 @@ function myRevert(myarr) {
     return result;
 }
 var arr1 = ["hola", "que", "tal", "estás"];
-console.log(myRevert(arr1));
+// console.log(myRevert(arr1));
+// Función de imprimir el color que si está en el arcoiris
 function isRainbow(colors) {
     var rainbow = ["rojo", "naranja", "amarillo", "verde", "azul", "violeta", "morado"];
     var colorEs = [];
@@ -34,7 +38,8 @@ function isRainbow(colors) {
     return colorEs;
 }
 var colores = ["verde", "gris", "negro"];
-console.log(isRainbow(colores));
+// console.log(isRainbow(colores));
+// Función de dar la suma de todos los caracteres de todas las palabras en un array
 function add(myWords) {
     var result = 0;
     for (var _i = 0, myWords_1 = myWords; _i < myWords_1.length; _i++) {
@@ -45,5 +50,6 @@ function add(myWords) {
     }
     return result;
 }
+exports.add = add;
 var pal = ["Rodrigo", "cocina"];
-console.log(add(pal));
+// console.log(add(pal));

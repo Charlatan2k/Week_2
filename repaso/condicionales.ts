@@ -42,7 +42,7 @@ function zodiac(dia: number, mes: number):string{
 }
 
 // Llamando a la función con sus parametros
-console.log(zodiac(24, 2));
+// console.log(zodiac(24, 2));
 
 
 // Función de continente
@@ -74,16 +74,18 @@ function continent(country:string):string{
   return `Estás en ${continente}`;
 }
 
-console.log(continent("España"));
+// console.log(continent("España"));
 
 
 //Función de numeros pares
-function isEven(n:number):void{
+export function isEven(n:number):void{
   if (n % 2 === 0){
-    console.log(n);
-    
+    console.log(`El numero ${n} es par`);
+  }
+  else{
+    console.log(`El número ${n} es impar`);
   }
   
 }
 
-isEven(2);
+// isEven(2);

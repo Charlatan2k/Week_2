@@ -14,7 +14,7 @@ function hasEven(myNums:number[]):boolean{
 
 let numArr: number[] = [2];
 
-console.log(hasEven(numArr));
+// console.log(hasEven(numArr));
 
 
 // Función para comprobar que todos los nombre del array empiezan por m
@@ -33,4 +33,4 @@ function startsWithM(myNames:string[]):boolean{
 
 let mArr = ["Marta", "Manuel", "Manolo"]
 
-console.log(startsWithM(mArr));
+// console.log(startsWithM(mArr));
