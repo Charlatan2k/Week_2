@@ -76,6 +76,8 @@ function continent(country:string):string{
 
 console.log(continent("España"));
 
+
+//Función de numeros pares
 function isEven(n:number):void{
   if (n % 2 === 0){
     console.log(n);
